@@ -62,9 +62,9 @@ while True:
     discrepant = None
 
     if day < 10 or month < 11 or year < 1980:
-        discrepant = True
-    else:
         discrepant = False
+    else:
+        discrepant = True
 
     person = Passport(nations[randint(0,8)][0:-1] , gender , f_name, day, month, year, discrepant, " ")
 
