@@ -61,7 +61,7 @@ while True:
 
     discrepant = None
 
-    if day != 10 or month != 11 or year != 1980:
+    if day > 10 or month > 11 or year > 1980:
         discrepant = True
     else:
         discrepant = False
