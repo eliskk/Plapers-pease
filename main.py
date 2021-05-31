@@ -52,11 +52,11 @@ while True:
         month -= randint(1,5)
     elif expired_by == 2:
         year -= randint(1,2)
-    elif expired_by == 3 or 4 or 5:
+    elif expired_by == 3 or expired_by == 4 or expired_by == 5:
         day += randint(1,11)
-    elif expired_by == 6 or 7 or 8:
+    elif expired_by == 6 or expired_by == 7 or expired_by == 8:
         month += randint(1,5)
-    elif expired_by == 9 or 10 or 11:
+    elif expired_by == 9 or expired_by == 10 or expired_by == 11:
         year += randint(1,2)  
 
 
