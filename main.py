@@ -42,7 +42,7 @@ while True:
 
     f_name = names[randint(0,104)][0:-1] + " " + names[randint(0,104)][0:-1]
 
-    expired_by = randint(0,14)
+    expired_by = randint(0,11)
     day = 10
     month = 11
     year = 1980
@@ -52,6 +52,13 @@ while True:
         month -= randint(1,5)
     elif expired_by == 2:
         year -= randint(1,2)
+    elif expired_by == 3 or 4 or 5:
+        month -= randint(1,5)
+    elif expired_by == 6 or 7 or 8:
+        year -= randint(1,2)
+    elif expired_by == 9 or 10 or 11:
+        year -= randint(1,2)  
+
 
     discrepant = None
 
