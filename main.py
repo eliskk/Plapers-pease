@@ -59,17 +59,17 @@ while True:
     elif expired_by == 5:
         year += randint(1,2)
 
-    discrepant = None
+    discrepant = False
 
     if day < 10 or month < 11 or year < 1980:
-        discrepant = False
-    else:
         discrepant = True
+    else:
+        discrepant = False
 
     person = Passport(nations[randint(0,8)][0:-1] , gender , f_name, day, month, year, discrepant, " ")
 
     print(person.nationality + "\n" + person.gender + "\n" + person.name + "\n" + str(person.day) + "." + str(person.month) + "." + str(person.year))
-
+    
     allow = input("ALLOW? Y/N ")
 
     if allow == "Y":
