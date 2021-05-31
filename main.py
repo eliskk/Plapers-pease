@@ -71,7 +71,7 @@ while True:
     person = Passport(nations[randint(0,8)][0:-1] , gender , f_name, day, month, year, discrepant, " ")
 
     print(person.nationality + "\n" + person.gender + "\n" + person.name + "\n" + str(person.day) + "." + str(person.month) + "." + str(person.year))
-    print(person.discrepant) 
+    print("!!! " + person.discrepant) 
 
     allow = input("ALLOW? Y/N ")
 
