@@ -61,7 +61,7 @@ while True:
 
     discrepant = False
 
-    if day < 10 or month < 11 or year < 1980:
+    if expired_by == 0 or expired_by == 1 or expired_by == 2:
         discrepant = True
     else:
         discrepant = False
