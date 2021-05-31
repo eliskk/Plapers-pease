@@ -74,14 +74,14 @@ while True:
 
     if allow == "Y":
         if person.discrepant == True:
-            print("Expiry date!")
+            print("---\nWRONG\n---")
         else:
-            print("For the benefit of Tekkuo!")
+            print("---\nCORRECT\n---")
     if allow == "N":
         if person.discrepant == True:
-            print("For the benefit of Tekkuo")
+            print("---\nCORRECT\n---")
         else:
-            print("They were valid!")
+            print("---\nWRONG\n---")
 
 
 c.close()
