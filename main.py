@@ -86,6 +86,10 @@ while True:
             print("---\nCORRECT\n---")
         elif person.discrepant == False:
             print("---\nWRONG\n---")
+    elif allow == "S":
+        quit()
+    else: 
+        pass
 
 
 c.close()
