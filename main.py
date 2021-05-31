@@ -63,6 +63,8 @@ while True:
 
     if expired_by == 0 or expired_by == 1 or expired_by == 2:
         discrepant = True
+    elif expired_by == 3 or expired_by == 4 or expired_by == 5:
+        discrepant = False
     else:
         discrepant = False
 
