@@ -32,6 +32,8 @@ class Passport: # This is virtually the whole game
 #       else:
 #            pass
 
+print("WELCOME TO TEKKEN BORDER CUSTOMS, OTHERWISE KNOWN AS PLAPERS PEASE.\nYOUR JOB IS SIMPLE: PERMIT THOSE WHOSE PASSPORTS AREN'T EXPIRED IN AND REJECT THE ONES WHOSE ARE\nFOR THE BENEFIT OF TEKKUO!")
+
 while True:
     
     gender = ""
@@ -71,7 +73,6 @@ while True:
     person = Passport(nations[randint(0,8)][0:-1] , gender , f_name, day, month, year, discrepant, " ")
 
     print(person.nationality + "\n" + person.gender + "\n" + person.name + "\n" + str(person.day) + "." + str(person.month) + "." + str(person.year))
-    print("!!! " + person.discrepant) 
 
     allow = input("ALLOW? Y/N ")
 
