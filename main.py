@@ -78,12 +78,12 @@ while True:
     if allow == "Y":
         if person.discrepant == True:
             print("---\nWRONG\n---")
-        else:
+        elif person.discrepant == False:
             print("---\nCORRECT\n---")
-    if allow == "N":
+    elif allow == "N":
         if person.discrepant == True:
             print("---\nCORRECT\n---")
-        else:
+        elif person.discrepant == False:
             print("---\nWRONG\n---")
 
 
